@@ -1,0 +1,27 @@
+
+.welcome{
+    min-height: 100vh;
+    height: auto;
+    text-align: center;
+    position: relative;
+    padding: 4rem 1rem;
+    background-image: url('../../images/webp/statue-advocacy.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    .title-section{
+        text-transform: uppercase;
+    }   
+    iframe{
+        margin-top: 3rem;
+        border-radius: .4rem;
+        max-width: 100%;
+    }
+    // .welcome-img{
+    //     position: absolute;
+    //     left: 0;
+    //     width: 40rem;
+    //     z-index: -1;
+    // }
+}

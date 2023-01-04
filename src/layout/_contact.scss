@@ -1,0 +1,106 @@
+
+.contact{
+    display: flex;
+    justify-content: center;
+    padding: 4rem 2rem;
+
+    min-height: 100vh;
+    background-image: url("../../images/webp/bg-advocacy_form.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    
+    .content{
+        width: 50%;
+        
+        .title-section{
+            text-align: left;
+        }
+    }
+    
+    form{
+        display: flex;
+        gap: 1.8rem;
+        flex-direction: column;
+        padding: 3rem 2rem;
+        width: 30rem;
+        max-width: 100%;
+        height: fit-content;
+        background-color: rgba(255, 255, 255, 0.11);
+        backdrop-filter: blur(8px);
+        border-radius: var(--borderRadius);
+        
+        .input-field{
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            
+            label{
+                position: absolute;
+                top: 5px;
+                color: rgba(0, 0, 0, 0.438);
+                pointer-events: none;
+                margin: 5px;
+                margin-left: .5rem; 
+                font-weight: 600;
+                transition: all .3s ease-out;
+                -webkit-transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-out;
+            }
+            input,textarea{
+                padding: .7rem;
+                font-weight: 600;
+                font-size: 1rem;
+                font-family: 'montserrat';
+                width: 100%;
+
+                border-radius: 4px;
+                border: 0;
+                outline: none;
+
+                &::placeholder{
+                    color: black;
+                }
+
+               &:focus{
+                +label{
+                    top: -1.7rem;
+                    color: white;
+                }
+               }
+               &:not(:placeholder-shown){
+                +label{
+                    top: -1.7rem;
+                    color: white;
+                }
+               }
+            }
+            textarea{
+                height: 150px;
+                resize: none;
+            }
+        }
+    }
+}
+
+@media (max-width:850px) {
+    .contact{
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+
+        .content{
+            width: 100%;
+            text-align: center;
+            .title-section{
+                text-align: center;
+            }
+        }
+    }
+}
+@media (max-width:850px) {
+    .contact{
+        padding: 4rem .5rem;
+    }
+}

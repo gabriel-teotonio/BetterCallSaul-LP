@@ -1,0 +1,52 @@
+
+.testimunials{
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    padding: 4rem 0;
+
+    .testimunials-videos{
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 6rem;
+
+        figure{
+            text-align: center;
+            position: relative;
+            
+            img{
+                filter: brightness(40%);
+                border-radius: 4px;
+            }
+
+            .play-btn{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 4rem;
+                cursor: pointer;
+                transition: .2s all;
+                color: rgba(255, 255, 255, 0.313);
+
+                &:hover{
+                    color: white;
+                }
+            }
+            figcaption{
+                font-weight: 600;
+                font-size: 1rem;
+                margin-top: .5rem;
+            }
+        }
+    }
+}
+
+@media (max-width:850px) {
+    .testimunials{
+        .testimunials-videos{
+            flex-direction: column;
+        }
+    }
+}

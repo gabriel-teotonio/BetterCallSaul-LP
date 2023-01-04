@@ -1,0 +1,81 @@
+
+.main{
+    background-image: url("../../images/webp/bg-main_1.webp");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    
+    .content{
+        width: 70%;
+        margin-left: 4rem;
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .content-title{
+            font-size: 4rem;
+        }
+        .cathphrase{
+            font-size: 2.5rem;
+            font-family: 'Dancing Script', sans-serif;
+            font-weight: bold;
+        }
+    }
+
+    .main-img{
+        position: absolute;
+        // width: 500px;
+        width: 38%;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+@media (max-width:850px) {
+    .main{
+        height: auto;
+        .content{
+            flex-direction: column;
+            margin-left: 0;
+            width: 100%;
+
+            .infos{
+                padding: 0 1rem;
+            }
+        }
+        .main-img{
+            position: initial;
+            width: 50%;
+            margin-left: auto;
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media (max-width:430px) {
+    .main{
+        .content{
+            text-align: center;
+            margin-top: 2rem;
+            .content-title{
+                font-size: 2rem;
+            }
+            .cathphrase{
+                font-size: 1.5rem;
+            }
+            .infos{
+                .link-btn{
+                    margin: 3rem auto;
+                }
+            }
+        }
+        .main-img{
+            width: 80%;
+        }  
+    }
+}

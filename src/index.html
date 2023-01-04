@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BetterCallSaul</title>
+    <link rel="stylesheet" href="style/main.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com"
+    crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" 
+    crossorigin><link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="../images/png/favicon-32x32.png" type="image/svg">
+
+    <!-- icons fontawesome -->
+    <script src="https://kit.fontawesome.com/d7a19c72cc.js" crossorigin="anonymous"></script>
+
+    <!-- Javascript -->
+    <script src="js/app.js" defer></script>
+    <script src="js/modalVideo.js" defer></script>
+</head>
+<body>
+    <div class="modal-video">
+        <header>
+            <button class="btn-close close" id="btnClose">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </header>
+        <h2>Assista o vídeo!</h2>
+        <div class="modal-videoContent">
+        </div>
+    </div>
+    <main class="main">
+        <header class="header">
+            <a href="#">
+                <img class="header-logo" src="../images/webp/logo-saulGoodman.svg" alt="logo-saulGoodman">
+            </a>
+            <nav>
+                <ul class="menu-list">
+                    <li class="menu-item"><a href="#">Home</a></li>
+                    <li class="menu-item"><a href="#">Serviços</a></li>
+                    <li class="menu-item"><a href="#">Fale conosco</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <article class="content">
+                <article class="infos">
+                    <h1 class="content-title">Se você precisa de um advogado criminal</h1>
+                    <span class="cathphrase">"É melhor chamar o Saul !"</span>
+                    <a class="link-btn" href="#">
+                        <button class="btn-primary">Chamar o saul</button>
+                    </a>
+                </article>
+                <img class="main-img" src="../images/webp/Saul-main_1.webp" alt="saulgoodman-photo">
+        </article>
+    </main>
+
+    <section class="welcome">
+        <!-- <img class="welcome-img" src="../images/webp/statue-advocacy.webp" alt="statue-advocacy-imagem"> -->
+        <div class="welcome-content">
+            <h2 class="title-section">Bem-vindo infratores da lei !</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wqnHtGgVAUE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+    <section class="services">
+        <h2 class="title-section">Serviços</h2>
+        <ul class="service-list">
+            <li class="service-item">
+                <i class="fa-solid fa-car"></i>
+                <h4>Agir em flagrante delito</h4>
+            </li>
+            <li class="service-item">
+                <i class="fa-solid fa-pills"></i>
+                <h4>Tráfico de drogas</h4>
+            </li>
+            <li class="service-item">
+                <i class="fa-solid fa-handcuffs"></i>
+                <h4>Audiência de custódia</h4>
+            </li>
+            <li class="service-item">
+                <i class="fa-solid fa-scroll"></i>
+                <h4>Pedido de Liberdade em Habeas Corpus</h4>
+            </li>
+        </ul>
+    </section>  
+
+    <section class="banner-baby">
+        <article class="content">
+            <h2 class="title-section banner-baby_title">Eu posso provar que esse bebê não é seu!</h2>
+            <a class="link-btn" href="#">
+                <button class="btn-primary">Pedir um orçamento</button>
+            </a>
+            <img class="img-bannerBaby" src="../images/webp/baby-cj-1.webp" alt="baby-cj">
+        </article>
+    </section>
+
+    <section class="testimunials">  
+        <h2 class="title-section testimunials-title">Depoimentos</h2>
+        <article class="testimunials-videos">
+            <figure>
+                <img src="../images/png/Carl-BB 1.png" alt="Carl-BB">
+                <i data-name="carl" class="fa-regular fa-circle-play play-btn"></i>
+                <figcaption>Carl</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/png/Wendy-BB 1.png" alt="Wendy-BB">
+                <i data-name="wendy" class="fa-regular fa-circle-play play-btn"></i>
+                <figcaption>Wendy</figcaption>
+            </figure>
+            <figure>
+                <img src="../images/png/badger-BB 1.png" alt="badger-BB">
+                <i data-name="badger" class="fa-regular fa-circle-play play-btn"></i>
+                <figcaption>Badger</figcaption>
+            </figure>
+        </article>
+    </section>
+
+    <section class="contact">
+        <article class="content">
+            <h2 class="title-section">Me envie um email !</h2>
+            <p>Saul pode ajudar você</p>
+        </article>
+            <form>
+              <div class="input-field">
+                  <input required minlength="6" type="text" id="name" placeholder=" " class="input">
+                  <label for="name">Nome</label>
+              </div>
+              <div class="input-field">
+                  <input required  type="email" id="email" placeholder=" " class="input">
+                  <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                  <textarea required minlength="20" id="textareaMessage" placeholder=" " class="message-textarea input"></textarea>
+                  <label for="textareaMessage">Como posso ajudar ?</label>
+              </div>
+
+              <button id="btnSend" class="btn-send" type="submit">Enviar mensagem</button>
+            </form>
+    </section>
+
+    <footer class="footer">
+        <header>
+            <a href="#">
+                <img class="header-logo" src="../images/webp/logo-saulGoodman.svg" alt="logo-saulGoodman">
+            </a>
+        </header>
+
+        <article class="content-footer">
+            <div class="content-item">
+                <h4>Map site</h4>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#">Fale conosco</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-item">
+                <h4>Endereço</h4> 
+                <ul>
+                    <li><Address>Albuquerque, Novo México</Address></li>
+                </ul>
+            </div>
+        </article>
+
+        <div class="bottom-content">
+            <span class="copy-text" >&copy; Copyright 2022 Saul Goodman All rights reserved</span>
+        </div>
+    </footer>
+</body>
+</html>

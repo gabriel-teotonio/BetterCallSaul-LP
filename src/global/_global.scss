@@ -1,0 +1,41 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100%;
+    font-size: 16px;
+    font-family: 'montserrat', sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-white);
+
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+ul{
+    list-style: none;
+}
+
+.title-section{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+@media (max-width:430px) {
+    .title-section{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width:325px) {
+    .title-section{
+        font-size: 1.4rem;
+    }
+}

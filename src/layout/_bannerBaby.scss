@@ -1,0 +1,45 @@
+@import '../components/button';
+
+.banner-baby{
+    display: flex;
+    background: linear-gradient(101.4deg, #000C1C 57.04%, #424308 113.15%);
+    position: relative;
+    
+    min-height: 60vh;
+    height: auto;
+    padding: 2rem 4rem;
+
+    .content{
+        width: 50%;
+
+        .banner-baby_title{
+            text-align: left;
+        }
+        .img-bannerBaby{
+            position: absolute;
+            right: 2rem;
+            bottom: 0;
+    
+            max-width: 100%;
+        }
+    }
+
+
+}
+
+@media (max-width:430px) {
+    .banner-baby{
+        padding: 0 2rem;
+        padding-top: 2rem;
+        .content{
+            width: 100%;
+            flex-direction: column;
+            .banner-baby_title{
+                text-align: center;
+            }
+            .img-bannerBaby{
+                position: initial;
+            }
+        }
+    }
+}
